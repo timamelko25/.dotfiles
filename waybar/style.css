@@ -4,7 +4,7 @@
 @define-color background-alt #31363b;
 
 * {
-    font-family: "Mononoki Nerd Font", "JetBrainsMono Nerd Font", "NotoSansMono", sans-serif;;
+    font-family: "Mononoki Nerd Font", "JetBrainsMono Nerd Font", "NotoSansMono", sans-serif;
     font-size: 17px;
     padding: 0;
     margin: 0;
@@ -30,31 +30,33 @@
 }
 
 #wireplumber,
-#bat,
 #tray,
-#usage,
-#net {
+#group-usage,
+#group-net,
+#custom-notification {
     background-color: @background-alt;
     border-radius: 3px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-left: 0.3em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
 }
 
 #battery,
 #memory,
 #language,
-#network {
-    margin-right: 0.8em;
+#network,
+#bluetooth,
+#backlight,
+#temperature {
+    margin-left: 0.4em;
+    margin-right: 0.4em;
 }
 
-#custom-notification {
-    background-color: @background-alt;
-    border-radius: 3px;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-    margin-left: 0.5em;
-    color: @foreground;
+#custom-capslock {
+    color: #ff5555;
+    margin-left: 0.4em;
+    margin-right: 0.2em;
 }
 
 #custom-notification:hover {
